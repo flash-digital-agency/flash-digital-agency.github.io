@@ -1,0 +1,255 @@
+$primary-color: #FF2A2A;
+$secondary-color: #F9B217;
+$text-color: #333;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $primary-color;
+  padding: 1rem;
+
+  .desktop-nav {
+    display: block;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 1rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+
+      .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+      }
+    }
+
+    .mobile-menu-items {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 1rem;
+      background-color: $primary-color;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+
+      &:checked {
+        ~ .hamburger-menu {
+          .bar:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+          }
+          .bar:nth-child(2) {
+            opacity: 0;
+          }
+          .bar:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+          }
+        }
+        ~ .mobile-menu-items {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 2rem;
+
+  .hero {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    .btn {
+      display: inline-block;
+      background-color: $primary-color;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .about,
+  .cases,
+  .team,
+  .contact {
+    margin-bottom: 3rem;
+
+    h2 {
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .case-list,
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .contact {
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid $secondary-color;
+        border-radius: 4px;
+      }
+
+      textarea {
+        grid-column: 1 / -1;
+      }
+
+      button {
+        grid-column: 1 / -1;
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  header {
+    .desktop-nav {
+      ul {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    .mobile-nav {
+      .hamburger-menu {
+        .bar {
+          transition: transform 0.3s;
+        }
+      }
+
+      .mobile-menu-items {
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 1rem;
+
+    .hero {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+      }
+    }
+
+    .case-list,
+    .team-members {
+      grid-template-columns: 1fr;
+    }
+
+    .contact {
+      form {
+        grid-template-columns: 1fr;
+
+        textarea {
+          grid-column: auto;
+        }
+
+        button {
+          grid-column: auto;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+}
