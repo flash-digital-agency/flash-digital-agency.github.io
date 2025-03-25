@@ -6,6 +6,7 @@ body {
 }
 
 header {
+  display: block;
   position: fixed;
   width: 100%;
   background-color: #FF2A2A;
@@ -113,6 +114,17 @@ header .mobile-nav .mobile-menu-toggle:checked ~ .hamburger-menu .bar:nth-child(
 
 header .mobile-nav .mobile-menu-toggle:checked ~ .mobile-menu-items {
   display: block;
+}
+
+#logoContainer {
+  z-index: 1;
+  margin: 0 5px 0 15px;
+  position: fixed;
+  padding-top: 8px;
+}
+
+#logo {
+  width: 64px;
 }
 
 main {
@@ -225,6 +237,10 @@ footer {
   }
   header .desktop-nav ul li {
     margin: 0.5rem 0;
+  }
+  header .mobile-nav .hamburger-menu {
+    float: right;
+    margin-right: 40px;
   }
   header .mobile-nav .hamburger-menu .bar {
     -webkit-transition: -webkit-transform 0.3s;

@@ -10,13 +10,14 @@ body {
 }
 
 header {
+  display: block;
   position: fixed;
   width: 100%;
   background-color: $primary-color;
   padding: 1rem;
 
   .desktop-nav {
-    display: block;
+    display: block;;
 
     @media (max-width: 767px) {
       display: none;
@@ -101,6 +102,17 @@ header {
       }
     }
   }
+}
+
+#logoContainer {
+  z-index: 1;
+  margin: 0 5px 0 15px;
+  position: fixed;
+  padding-top: 8px;
+}
+
+#logo {
+  width: 64px;
 }
 
 main {
@@ -212,6 +224,8 @@ footer {
         .bar {
           transition: transform 0.3s;
         }
+        float: right;
+        margin-right: 40px;
       }
 
       .mobile-menu-items {
