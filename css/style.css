@@ -164,6 +164,12 @@ main .team-members {
   grid-gap: 2rem;
 }
 
+main .case-item, main .member-item {
+  padding: 10px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
 main .contact form {
   display: -ms-grid;
   display: grid;

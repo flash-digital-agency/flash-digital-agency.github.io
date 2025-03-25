@@ -145,6 +145,12 @@ main {
     grid-gap: 2rem;
   }
 
+  .case-item, .member-item {
+    padding: 10px;
+    background: #f0f0f0;
+    text-align: center;
+  }
+
   .contact {
     form {
       display: grid;
