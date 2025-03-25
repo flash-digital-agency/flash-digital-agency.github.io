@@ -115,7 +115,7 @@ header {
 
 #logoContainer {
   z-index: 1;
-  margin: 0 5px 0 15px;
+  margin: 0 5px 0 10%;
   position: fixed;
   padding-top: 8px;
 }
@@ -124,8 +124,14 @@ header {
   width: 64px;
 }
 
+#mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   padding: 2rem;
+  border: #c4c4c4 solid 1px;
 
   .hero {
     text-align: center;
@@ -180,7 +186,7 @@ main {
 
       input,
       textarea {
-        width: 100%;
+        grid-column: 1 / -1;
         padding: 0.5rem;
         border: 1px solid $secondary-color;
         border-radius: 4px;

@@ -128,7 +128,7 @@ header .mobile-nav .mobile-menu-toggle:checked ~ .mobile-menu-items {
 
 #logoContainer {
   z-index: 1;
-  margin: 0 5px 0 15px;
+  margin: 0 5px 0 10%;
   position: fixed;
   padding-top: 8px;
 }
@@ -137,8 +137,18 @@ header .mobile-nav .mobile-menu-toggle:checked ~ .mobile-menu-items {
   width: 64px;
 }
 
+#mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main {
   padding: 2rem;
+  border: #c4c4c4 solid 1px;
 }
 
 main .hero {
@@ -202,7 +212,7 @@ main .contact form {
 
 main .contact form input,
 main .contact form textarea {
-  width: 100%;
+  grid-column: 1 / -1;
   padding: 0.5rem;
   border: 1px solid #F9B217;
   border-radius: 4px;
