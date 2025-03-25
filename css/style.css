@@ -248,6 +248,9 @@ footer {
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
   }
+  header .mobile-nav .mobile-menu-items {
+    margin-top: 30px;
+  }
   header .mobile-nav .mobile-menu-items li {
     margin-bottom: 0.5rem;
   }
