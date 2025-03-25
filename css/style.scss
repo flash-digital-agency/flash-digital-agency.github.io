@@ -2,11 +2,20 @@ $primary-color: #FF2A2A;
 $secondary-color: #F9B217;
 $text-color: #333;
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: $text-color;
   margin: 0;
   padding: 0;
+
+  margin: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 header {
