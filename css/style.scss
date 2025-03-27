@@ -140,14 +140,22 @@ main {
     text-align: center;
     h1 {
       font-size: 4em;
+      @media (max-width: 414px) {
+        font-size: 2em;
+      }
     }
-    h1, p {
+    h1,
+    p {
       color: #fff;
+    }
+    @media (max-width: 312px) {
+      p {
+        font-size: 70%;
+      }
     }
     // margin-top: 3rem;
     margin-top: 20%;
-    @media (max-width: 415px)
-    {
+    @media (max-width: 415px) {
       margin-top: 30%;
     }
     margin-bottom: 2rem;
@@ -170,22 +178,7 @@ main {
   .about {
     margin-top: 250px;
     @media (max-width: 1053px) {
-      margin-top: 5rem;
-    }
-    @media (max-width: 950px) {
-      margin-top: 8rem;
-    }
-    @media (max-width: 790px)
-    {
-      margin-top: 10rem;;
-    }
-    @media (max-width: 650px)
-    {
-      margin-top: 14rem;
-    }
-    @media (max-width: 414px)
-    {
-      margin-top: 8rem;
+      margin-top: 30%;
     }
   }
 
@@ -259,7 +252,7 @@ main {
   top: 50px;
   @media (max-width: 1053px) {
     width: 104%;
-    height: calc(100% / 1.78);
+    height: auto;
   }
 }
 
