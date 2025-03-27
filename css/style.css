@@ -244,8 +244,7 @@ main .member-item {
   border-radius: 16px;
 }
 
-main s
-.contact form {
+main .contact form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -253,23 +252,19 @@ main s
   grid-gap: 1rem;
 }
 
-main s
-.contact form input,
-main s
-.contact form textarea {
+main .contact form input,
+main .contact form textarea {
   grid-column: 1 / -1;
   padding: 0.5rem;
   border: 1px solid #f9b217;
   border-radius: 4px;
 }
 
-main s
-.contact form textarea {
+main .contact form textarea {
   grid-column: 1 / -1;
 }
 
-main s
-.contact form button {
+main .contact form button {
   grid-column: 1 / -1;
   background-color: #ff2a2a;
   color: #fff;
@@ -281,8 +276,7 @@ main s
   transition: background-color 0.3s;
 }
 
-main s
-.contact form button:hover {
+main .contact form button:hover {
   background-color: #f60000;
 }
 
