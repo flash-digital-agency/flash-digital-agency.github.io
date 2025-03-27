@@ -241,9 +241,11 @@ main .member-item {
   padding: 10px;
   background: #f0f0f0;
   text-align: center;
+  border-radius: 16px;
 }
 
-main .contact form {
+main s
+.contact form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -251,19 +253,23 @@ main .contact form {
   grid-gap: 1rem;
 }
 
-main .contact form input,
-main .contact form textarea {
+main s
+.contact form input,
+main s
+.contact form textarea {
   grid-column: 1 / -1;
   padding: 0.5rem;
   border: 1px solid #f9b217;
   border-radius: 4px;
 }
 
-main .contact form textarea {
+main s
+.contact form textarea {
   grid-column: 1 / -1;
 }
 
-main .contact form button {
+main s
+.contact form button {
   grid-column: 1 / -1;
   background-color: #ff2a2a;
   color: #fff;
@@ -275,7 +281,8 @@ main .contact form button {
   transition: background-color 0.3s;
 }
 
-main .contact form button:hover {
+main s
+.contact form button:hover {
   background-color: #f60000;
 }
 
