@@ -1,5 +1,5 @@
-$primary-color: #FF2A2A;
-$secondary-color: #F9B217;
+$primary-color: #ff2a2a;
+$secondary-color: #f9b217;
 $text-color: #333;
 
 html {
@@ -11,6 +11,7 @@ body {
   color: $text-color;
   margin: 0;
   padding: 0;
+  background: whitesmoke;
 
   margin: 0;
   min-height: 100%;
@@ -19,6 +20,7 @@ body {
 }
 
 header {
+  z-index: 1;
   display: block;
   position: fixed;
   width: 100%;
@@ -26,7 +28,7 @@ header {
   padding: 1rem;
 
   .desktop-nav {
-    display: block;;
+    display: block;
 
     @media (max-width: 767px) {
       display: none;
@@ -114,7 +116,7 @@ header {
 }
 
 #logoContainer {
-  z-index: 1;
+  z-index: 2;
   margin: 0 5px 0 10%;
   position: fixed;
   padding-top: 8px;
@@ -134,8 +136,20 @@ main {
   border: #c4c4c4 solid 1px;
 
   .hero {
+    position: relative;
     text-align: center;
-    margin-top: 3rem;
+    h1 {
+      font-size: 4em;
+    }
+    h1, p {
+      color: #fff;
+    }
+    // margin-top: 3rem;
+    margin-top: 20%;
+    @media (max-width: 415px)
+    {
+      margin-top: 30%;
+    }
     margin-bottom: 2rem;
 
     .btn {
@@ -150,6 +164,28 @@ main {
       &:hover {
         background-color: darken($primary-color, 10%);
       }
+    }
+  }
+
+  .about {
+    margin-top: 250px;
+    @media (max-width: 1053px) {
+      margin-top: 5rem;
+    }
+    @media (max-width: 950px) {
+      margin-top: 8rem;
+    }
+    @media (max-width: 790px)
+    {
+      margin-top: 10rem;;
+    }
+    @media (max-width: 650px)
+    {
+      margin-top: 14rem;
+    }
+    @media (max-width: 414px)
+    {
+      margin-top: 8rem;
     }
   }
 
@@ -172,7 +208,8 @@ main {
     grid-gap: 2rem;
   }
 
-  .case-item, .member-item {
+  .case-item,
+  .member-item {
     padding: 10px;
     background: #f0f0f0;
     text-align: center;
@@ -211,6 +248,18 @@ main {
         }
       }
     }
+  }
+}
+
+#banner {
+  position: absolute;
+  margin-left: -32px;
+  width: 1053px;
+  height: 592px;
+  top: 50px;
+  @media (max-width: 1053px) {
+    width: 104%;
+    height: calc(100% / 1.78);
   }
 }
 
@@ -256,10 +305,6 @@ footer {
     padding: 1rem;
 
     .hero {
-      h1 {
-        font-size: 2rem;
-      }
-
       .btn {
         font-size: 1rem;
       }

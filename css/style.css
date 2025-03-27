@@ -7,6 +7,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  background: whitesmoke;
   margin: 0;
   min-height: 100%;
   display: -ms-grid;
@@ -16,10 +17,11 @@ body {
 }
 
 header {
+  z-index: 1;
   display: block;
   position: fixed;
   width: 100%;
-  background-color: #FF2A2A;
+  background-color: #ff2a2a;
   padding: 1rem;
 }
 
@@ -92,7 +94,7 @@ header .mobile-nav .mobile-menu-items {
   list-style-type: none;
   margin: 0;
   padding: 1rem;
-  background-color: #FF2A2A;
+  background-color: #ff2a2a;
 }
 
 header .mobile-nav .mobile-menu-items li {
@@ -127,7 +129,7 @@ header .mobile-nav .mobile-menu-toggle:checked ~ .mobile-menu-items {
 }
 
 #logoContainer {
-  z-index: 1;
+  z-index: 2;
   margin: 0 5px 0 10%;
   position: fixed;
   padding-top: 8px;
@@ -152,14 +154,29 @@ main {
 }
 
 main .hero {
+  position: relative;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 20%;
   margin-bottom: 2rem;
+}
+
+main .hero h1 {
+  font-size: 4em;
+}
+
+main .hero h1, main .hero p {
+  color: #fff;
+}
+
+@media (max-width: 415px) {
+  main .hero {
+    margin-top: 30%;
+  }
 }
 
 main .hero .btn {
   display: inline-block;
-  background-color: #FF2A2A;
+  background-color: #ff2a2a;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -170,6 +187,40 @@ main .hero .btn {
 
 main .hero .btn:hover {
   background-color: #f60000;
+}
+
+main .about {
+  margin-top: 250px;
+}
+
+@media (max-width: 1053px) {
+  main .about {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  main .about {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 790px) {
+  main .about {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 650px) {
+  main .about {
+    margin-top: 14rem;
+  }
+}
+
+@media (max-width: 414px) {
+  main .about {
+    margin-top: 8rem;
+  }
 }
 
 main .about,
@@ -183,7 +234,7 @@ main .about h2,
 main .cases h2,
 main .team h2,
 main .contact h2 {
-  color: #FF2A2A;
+  color: #ff2a2a;
   margin-bottom: 1rem;
 }
 
@@ -196,7 +247,8 @@ main .team-members {
   grid-gap: 2rem;
 }
 
-main .case-item, main .member-item {
+main .case-item,
+main .member-item {
   padding: 10px;
   background: #f0f0f0;
   text-align: center;
@@ -214,7 +266,7 @@ main .contact form input,
 main .contact form textarea {
   grid-column: 1 / -1;
   padding: 0.5rem;
-  border: 1px solid #F9B217;
+  border: 1px solid #f9b217;
   border-radius: 4px;
 }
 
@@ -224,7 +276,7 @@ main .contact form textarea {
 
 main .contact form button {
   grid-column: 1 / -1;
-  background-color: #FF2A2A;
+  background-color: #ff2a2a;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -238,8 +290,23 @@ main .contact form button:hover {
   background-color: #f60000;
 }
 
+#banner {
+  position: absolute;
+  margin-left: -32px;
+  width: 1053px;
+  height: 592px;
+  top: 50px;
+}
+
+@media (max-width: 1053px) {
+  #banner {
+    width: 104%;
+    height: calc(100% / 1.78);
+  }
+}
+
 footer {
-  background-color: #FF2A2A;
+  background-color: #ff2a2a;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -276,9 +343,6 @@ footer {
   }
   main {
     padding: 1rem;
-  }
-  main .hero h1 {
-    font-size: 2rem;
   }
   main .hero .btn {
     font-size: 1rem;
