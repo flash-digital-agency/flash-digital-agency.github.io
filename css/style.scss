@@ -135,10 +135,10 @@ header {
   width: 64px;
 }
 
-#mainContainer {
-  display: flex;
-  justify-content: center;
-}
+// #mainContainer {
+//   display: flex;
+//   justify-content: center;
+// }
 
 @font-face {
   font-family: Ruberoid-bold;
@@ -147,7 +147,12 @@ header {
 
 main {
   padding: 2rem;
-  border: #c4c4c4 solid 1px;
+  // border: #c4c4c4 solid 1px;
+  width: 1383px;
+  margin: 0 auto;
+  @media (max-width: 1383px) {
+    width: 90%;
+  }
 
   .hero {
     position: relative;
@@ -262,14 +267,20 @@ main {
 
 #banner {
   position: absolute;
-  margin-left: -32px;
-  width: 921px;
+  // margin-left: -32px;
+  left: 0;
+  // width: 921px;
+  // width: 1446px;
+  width: 100%;
   height: 579px;
   top: 50px;
-  @media (max-width: 921px) {
-    width: 104%;
+  @media (max-width: 950px) {
     height: auto;
   }
+  // @media (max-width: 921px) {
+  //   width: 104%;
+  //   height: auto;
+  // }
 }
 
 footer {
