@@ -8,7 +8,7 @@ html {
 
 @font-face {
   font-family: Ruberoid-medium;
-  src: url("../fonts/Ruberoid/fonnts.com-ruberoid-medium.otf");
+  src: url("../fonts/Ruberoid/Ruberoid-Medium.ttf");
 }
 
 body {
@@ -22,10 +22,6 @@ body {
   min-height: 100%;
   display: grid;
   grid-template-rows: 1fr auto;
-}
-
-span {
-  font-family: sans-serif;
 }
 
 header {
@@ -142,7 +138,7 @@ header {
 
 @font-face {
   font-family: Ruberoid-bold;
-  src: url("../fonts/Ruberoid/fonnts.com-ruberoid-bold.otf");
+  src: url("../fonts/Ruberoid/Ruberoid-Bold.ttf");
 }
 
 main {
