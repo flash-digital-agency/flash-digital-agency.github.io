@@ -30,17 +30,17 @@ header {
   padding: 1rem;
 }
 
-header .desktop-nav {
+header #desktop-nav {
   display: block;
 }
 
 @media (max-width: 767px) {
-  header .desktop-nav {
+  header #desktop-nav {
     display: none;
   }
 }
 
-header .desktop-nav ul {
+header #desktop-nav ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,27 +52,27 @@ header .desktop-nav ul {
   padding: 0;
 }
 
-header .desktop-nav ul li {
+header #desktop-nav ul li {
   margin: 0 1rem;
 }
 
-header .desktop-nav ul li a {
+header #desktop-nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-header .mobile-nav {
+header #mobile-nav {
   display: none;
 }
 
 @media (max-width: 767px) {
-  header .mobile-nav {
+  header #mobile-nav {
     display: block;
   }
 }
 
-header .mobile-nav .hamburger-menu {
+header #mobile-nav #hamburger-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,13 +88,13 @@ header .mobile-nav .hamburger-menu {
   cursor: pointer;
 }
 
-header .mobile-nav .hamburger-menu .bar {
+header #mobile-nav #hamburger-menu #bar {
   width: 100%;
   height: 3px;
   background-color: #fff;
 }
 
-header .mobile-nav .mobile-menu-items {
+header #mobile-nav #mobile-menu-items {
   display: none;
   list-style-type: none;
   margin: 0;
@@ -102,34 +102,34 @@ header .mobile-nav .mobile-menu-items {
   background-color: #ff2a2a;
 }
 
-header .mobile-nav .mobile-menu-items li {
+header #mobile-nav #mobile-menu-items li {
   margin-bottom: 0.5rem;
 }
 
-header .mobile-nav .mobile-menu-items li a {
+header #mobile-nav #mobile-menu-items li a {
   color: #fff;
   text-decoration: none;
 }
 
-header .mobile-nav .mobile-menu-toggle {
+header #mobile-nav #mobile-menu-toggle {
   display: none;
 }
 
-header .mobile-nav .mobile-menu-toggle:checked ~ .hamburger-menu .bar:nth-child(1) {
+header #mobile-nav #mobile-menu-toggle:checked ~ #hamburger-menu #bar:nth-child(1) {
   -webkit-transform: translateY(9px) rotate(45deg);
           transform: translateY(9px) rotate(45deg);
 }
 
-header .mobile-nav .mobile-menu-toggle:checked ~ .hamburger-menu .bar:nth-child(2) {
+header #mobile-nav #mobile-menu-toggle:checked ~ #hamburger-menu #bar:nth-child(2) {
   opacity: 0;
 }
 
-header .mobile-nav .mobile-menu-toggle:checked ~ .hamburger-menu .bar:nth-child(3) {
+header #mobile-nav #mobile-menu-toggle:checked ~ #hamburger-menu #bar:nth-child(3) {
   -webkit-transform: translateY(-9px) rotate(-45deg);
           transform: translateY(-9px) rotate(-45deg);
 }
 
-header .mobile-nav .mobile-menu-toggle:checked ~ .mobile-menu-items {
+header #mobile-nav #mobile-menu-toggle:checked ~ #mobile-menu-items {
   display: block;
 }
 
@@ -161,42 +161,42 @@ main {
   }
 }
 
-main .hero {
+main #hero {
   position: relative;
   text-align: center;
   margin-top: 20%;
   margin-bottom: 2rem;
 }
 
-main .hero h1 {
+main #hero h1 {
   font-size: 4em;
   font-family: Ruberoid-bold;
 }
 
 @media (max-width: 414px) {
-  main .hero h1 {
+  main #hero h1 {
     font-size: 2em;
   }
 }
 
-main .hero h1,
-main .hero p {
+main #hero h1,
+main #hero p {
   color: #fff;
 }
 
 @media (max-width: 312px) {
-  main .hero p {
+  main #hero p {
     font-size: 70%;
   }
 }
 
 @media (max-width: 415px) {
-  main .hero {
+  main #hero {
     margin-top: 30%;
   }
 }
 
-main .hero .btn {
+main #hero #btn {
   display: inline-block;
   background-color: #ff2a2a;
   color: #fff;
@@ -207,37 +207,37 @@ main .hero .btn {
   transition: background-color 0.3s;
 }
 
-main .hero .btn:hover {
+main #hero #btn:hover {
   background-color: #f60000;
 }
 
-main .about {
+main #about {
   margin-top: 250px;
 }
 
 @media (max-width: 1053px) {
-  main .about {
+  main #about {
     margin-top: 30%;
   }
 }
 
-main .about,
-main .cases,
-main .team,
-main .contact {
+main #about,
+main #cases,
+main #team,
+main #contact {
   margin-bottom: 3rem;
 }
 
-main .about h2,
-main .cases h2,
-main .team h2,
-main .contact h2 {
+main #about h2,
+main #cases h2,
+main #team h2,
+main #contact h2 {
   color: #ff2a2a;
   margin-bottom: 1rem;
 }
 
-main .case-list,
-main .team-members {
+main #case-list,
+main #team-members {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
@@ -253,7 +253,7 @@ main .member-item {
   border-radius: 16px;
 }
 
-main .contact form {
+main #contact form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -261,19 +261,19 @@ main .contact form {
   grid-gap: 1rem;
 }
 
-main .contact form input,
-main .contact form textarea {
+main #contact form input,
+main #contact form textarea {
   grid-column: 1 / -1;
   padding: 0.5rem;
   border: 1px solid #f9b217;
   border-radius: 4px;
 }
 
-main .contact form textarea {
+main #contact form textarea {
   grid-column: 1 / -1;
 }
 
-main .contact form button {
+main #contact form button {
   grid-column: 1 / -1;
   background-color: #ff2a2a;
   color: #fff;
@@ -285,7 +285,7 @@ main .contact form button {
   transition: background-color 0.3s;
 }
 
-main .contact form button:hover {
+main #contact form button:hover {
   background-color: #f60000;
 }
 
@@ -309,7 +309,7 @@ footer {
   padding: 1rem;
 }
 
-footer .footer-content {
+footer #footer-content {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -318,49 +318,49 @@ footer .footer-content {
           align-items: center;
 }
 
-footer .contact-info h3 {
+footer #contact-info h3 {
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
-footer .contact-info ul {
+footer #contact-info ul {
   list-style: none;
   padding: 0;
 }
 
-footer .contact-info ul li {
+footer #contact-info ul li {
   margin-bottom: 0.5rem;
 }
 
-footer .contact-info ul li a {
+footer #contact-info ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-footer .contact-info ul li a:hover {
+footer #contact-info ul li a:hover {
   text-decoration: underline;
 }
 
-footer .contact-info svg {
+footer #contact-info svg {
   margin: 5px;
   -webkit-transition: all ease 1.5s;
   transition: all ease 1.5s;
 }
 
-footer .contact-info #svgInstagram,
-footer .contact-info #svgTelegram,
-footer .contact-info #svgYouTube {
+footer #contact-info #svgInstagram,
+footer #contact-info #svgTelegram,
+footer #contact-info #svgYouTube {
   fill: #fff;
 }
 
-footer .contact-info #svgInstagram:hover,
-footer .contact-info #svgTelegram:hover,
-footer .contact-info #svgYouTube:hover {
+footer #contact-info #svgInstagram:hover,
+footer #contact-info #svgTelegram:hover,
+footer #contact-info #svgYouTube:hover {
   fill: #000;
 }
 
 @media (max-width: 767px) {
-  header .desktop-nav ul {
+  header #desktop-nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -369,44 +369,44 @@ footer .contact-info #svgYouTube:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .desktop-nav ul li {
+  header #desktop-nav ul li {
     margin: 0.5rem 0;
   }
-  header .mobile-nav .hamburger-menu {
+  header #mobile-nav #hamburger-menu {
     float: right;
     margin-right: 40px;
   }
-  header .mobile-nav .hamburger-menu .bar {
+  header #mobile-nav #hamburger-menu #bar {
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
   }
-  header .mobile-nav .mobile-menu-items {
+  header #mobile-nav #mobile-menu-items {
     margin-top: 30px;
   }
-  header .mobile-nav .mobile-menu-items li {
+  header #mobile-nav #mobile-menu-items li {
     margin-bottom: 0.5rem;
   }
   main {
     padding: 1rem;
   }
-  main .hero .btn {
+  main #hero #btn {
     font-size: 1rem;
   }
-  main .case-list,
-  main .team-members {
+  main #case-list,
+  main #team-members {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  main .contact form {
+  main #contact form {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  main .contact form textarea {
+  main #contact form textarea {
     grid-column: auto;
   }
-  main .contact form button {
+  main #contact form button {
     grid-column: auto;
   }
   footer {

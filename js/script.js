@@ -4,7 +4,7 @@
     type: "GET",
     dataType: "json",
     success: function (data) {
-      const caseList = $(".case-list");
+      const caseList = $("#case-list");
       data.forEach(function (item) {
         const caseItem = $("<div>").addClass("case-item");
         $("<h3>").text(item.title).appendTo(caseItem);
@@ -22,7 +22,7 @@
     type: "GET",
     dataType: "json",
     success: function (data) {
-      const teamMembers = $(".team-members");
+      const teamMembers = $("#team-members");
       data.forEach(function (member) {
         const memberItem = $("<div>").addClass("member-item");
         $("<img>").attr("src", member.image).appendTo(memberItem);
