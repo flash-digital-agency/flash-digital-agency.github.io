@@ -253,6 +253,10 @@ main .member-item {
   border-radius: 16px;
 }
 
+main .case-item:hover {
+  background: #d7d7d7;
+}
+
 main #contact form {
   display: -ms-grid;
   display: grid;
@@ -357,6 +361,69 @@ footer #contact-info #svgInstagram:hover,
 footer #contact-info #svgTelegram:hover,
 footer #contact-info #svgYouTube:hover {
   fill: #000;
+}
+
+.slider-container {
+  max-width: 300px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.slider-container #slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.slider-container #slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slider-container #slider .slide.active {
+  display: block;
+}
+
+.slider-container #slider .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider-container #slider .slide .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 93.3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+.slider-container #slider .slide .description h3 {
+  margin-top: 0;
+}
+
+.slider-container .controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-container .controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-container .controls button:hover {
+  background-color: #ccc;
 }
 
 @media (max-width: 767px) {

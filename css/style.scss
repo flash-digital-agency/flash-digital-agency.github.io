@@ -131,11 +131,6 @@ header {
   width: 64px;
 }
 
-// #mainContainer {
-//   display: flex;
-//   justify-content: center;
-// }
-
 @font-face {
   font-family: Ruberoid-bold;
   src: url("../fonts/Ruberoid/Ruberoid-Bold.ttf");
@@ -143,7 +138,6 @@ header {
 
 main {
   padding: 2rem;
-  // border: #c4c4c4 solid 1px;
   width: 1383px;
   margin: 0 auto;
   @media (max-width: 1383px) {
@@ -169,7 +163,7 @@ main {
         font-size: 70%;
       }
     }
-    // margin-top: 3rem;
+
     margin-top: 20%;
     @media (max-width: 415px) {
       margin-top: 30%;
@@ -225,6 +219,10 @@ main {
     border-radius: 16px;
   }
 
+  .case-item:hover {
+    background: darken(#f0f0f0, 10);
+  }
+
   #contact {
     form {
       display: grid;
@@ -263,20 +261,13 @@ main {
 
 #banner {
   position: absolute;
-  // margin-left: -32px;
   left: 0;
-  // width: 921px;
-  // width: 1446px;
   width: 100%;
   height: 579px;
   top: 50px;
   @media (max-width: 950px) {
     height: auto;
   }
-  // @media (max-width: 921px) {
-  //   width: 104%;
-  //   height: auto;
-  // }
 }
 
 footer {
@@ -328,6 +319,68 @@ footer {
         fill: #000;
       }
     }
+  }
+}
+
+.slider-container {
+  max-width: 300px;
+  margin: 40px auto;
+  position: relative;
+
+  #slider {
+      position: relative;
+      width: 100%;
+      height: 400px;
+
+      .slide {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: none;
+
+          &.active {
+              display: block;
+          }
+
+          img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+          }
+
+          .description {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 93.3%;
+              background-color: rgba(0, 0, 0, 0.5);
+              color: white;
+              padding: 10px;
+
+              h3 {
+                  margin-top: 0;
+              }
+          }
+      }
+  }
+
+  .controls {
+      text-align: center;
+      margin-top: 20px;
+
+      button {
+          margin: 0 10px;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+              background-color: #ccc;
+          }
+      }
   }
 }
 
