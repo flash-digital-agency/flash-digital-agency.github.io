@@ -217,10 +217,10 @@ main {
     background: #f0f0f0;
     text-align: center;
     border-radius: 16px;
-  }
 
-  .case-item:hover {
-    background: darken(#f0f0f0, 10);
+    &:hover {
+      background: darken(#f0f0f0, 10);
+    }
   }
 
   #contact {
@@ -323,6 +323,7 @@ footer {
 }
 
 .slider-container {
+  display: none;
   max-width: 300px;
   margin: 40px auto;
   position: relative;

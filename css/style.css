@@ -253,7 +253,8 @@ main .member-item {
   border-radius: 16px;
 }
 
-main .case-item:hover {
+main .case-item:hover,
+main .member-item:hover {
   background: #d7d7d7;
 }
 
@@ -364,6 +365,7 @@ footer #contact-info #svgYouTube:hover {
 }
 
 .slider-container {
+  display: none;
   max-width: 300px;
   margin: 40px auto;
   position: relative;
